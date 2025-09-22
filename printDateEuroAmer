@@ -1,0 +1,16 @@
+public class printDate {
+    public static void printAmerican(String weekday, String month, int date, int year) {
+        System.out.println(weekday + month + date + ", " + year);
+    }
+    public static void printEuropean(String weekday, String month, int date, int year) {
+        System.out.println(year + ", " + month + date);
+    }
+    public static void main (String[] args) {
+        String weekday = "Tuesday, ";
+        String month = "September ";
+        int date = 16;
+        int year = 2025;
+        printAmerican(weekday, month, date, year);
+        printEuropean(weekday, month, date, year);
+    }
+}//I'm not sure how Europe formats weedays like "Wednesday," sorry!
